@@ -1,4 +1,4 @@
-const form = document.getElementById('feedback-form');
+const form = document.querySelector('.feedback-form');
 
 const checkLocalStorage = () => {
   const storedData = JSON.parse(localStorage.getItem('feedback-form-state'));
