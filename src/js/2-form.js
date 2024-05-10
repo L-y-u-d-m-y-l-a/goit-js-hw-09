@@ -1,3 +1,5 @@
+const form = document.getElementById('feedback-form');
+
 const checkLocalStorage = () => {
   const storedData = JSON.parse(localStorage.getItem('feedback-form-state'));
   if (storedData) {
