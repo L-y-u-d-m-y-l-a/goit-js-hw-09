@@ -1,6 +1,7 @@
 const form = document.querySelector('.feedback-form');
 const email = document.querySelector('[name="email"]');
 const message = document.querySelector('[name="message"]');
+let formData = {};
 
 const checkLocalStorage = () => {
   const storedData = JSON.parse(localStorage.getItem('feedback-form-state'));
