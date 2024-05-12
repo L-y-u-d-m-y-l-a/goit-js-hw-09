@@ -7,8 +7,8 @@ const checkLocalStorage = () => {
   const storedData = JSON.parse(localStorage.getItem('feedback-form-state'));
   if (storedData) {
     formData = { ...formData, ...storedData };
-    email.value = formData.email;
-    message.value = formData.message;
+    email.value = formData.email || '';
+    message.value = formData.message || '';
   }
 };
 
